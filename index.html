@@ -82,7 +82,7 @@
   <!-- Logika JavaScript -->
   <script>
     // 1. Masukkan URL Apps Script Anda (/exec) dan Nomor WhatsApp Admin di bawah ini:
-    const API_URL = "https://script.google.com/macros/s/AKfycby3LajISVdlBzM7eEtqv4RjTSoOSMZ-FO6Hs7qItl18XkGmuEZCBGtK3dc_MMbYzFp7CA/exec"
+    const API_URL = "https://script.google.com/macros/s/AKfycbx3HgBk79xdyHNRtcTw3hiEMVvt6H41xsrBK3NqX6AsqeI1xBAEnyhaRVWgRtTJrjcQLw/exec"
     const WA_ADMIN = "6281917085479"
 
     let products = [];
@@ -196,7 +196,7 @@
         textWA += `Mohon info nomor rekening dan total ongkirnya. Terima kasih!`;
 
         // Buka WhatsApp Admin di tab baru
-        window.open(`https://wa.me/$628191708547?text=${encodeURIComponent(textWA)}`, "_blank");
+        window.open(`https://wa.me/${WA_ADMIN}?text=${encodeURIComponent(textWA)}`, "_blank");
 
         // Reset keranjang belanja
         cart = [];
